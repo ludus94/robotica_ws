@@ -1,0 +1,60 @@
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:8:5:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KEncoder[m[K’ is ambiguous
+     [01;31m[KEncoder[m[K enc[6];
+     [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:3:0[m[K:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:42:7:[m[K [01;36m[Knote: [m[Kcandidates are: class Encoder
+ class [01;36m[KEncoder[m[K
+       [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:3:0[m[K:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:9:7:[m[K [01;36m[Knote: [m[K                class std::Encoder
+ class [01;36m[KEncoder[m[K
+       [01;36m[K^~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:20:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kenc[m[K’ was not declared in this scope
+             [01;31m[Kenc[m[K[i]=new Encoder(type,0);
+             [01;31m[K^~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:20:24:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[KEncoder[m[K’
+             enc[i]=new [01;31m[KEncoder[m[K(type,0);
+                        [01;31m[K^~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:23:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kenc[m[K’ was not declared in this scope
+             [01;31m[Kenc[m[K[i]=new Encoder(type,max_length);
+             [01;31m[K^~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:23:24:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[KEncoder[m[K’
+             enc[i]=new [01;31m[KEncoder[m[K(type,max_length);
+                        [01;31m[K^~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:29:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kenc[m[K’ was not declared in this scope
+          message.data=[01;31m[Kenc[m[K[enc_number]->to_string();
+                       [01;31m[K^~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:8:5:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[KEncoder[m[K’ is ambiguous
+     [01;31m[KEncoder[m[K enc[6];
+     [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:3:0[m[K:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:42:7:[m[K [01;36m[Knote: [m[Kcandidates are: class Encoder
+ class [01;36m[KEncoder[m[K
+       [01;36m[K^~~~~~~[m[K
+In file included from [01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:3:0[m[K:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:9:7:[m[K [01;36m[Knote: [m[K                class std::Encoder
+ class [01;36m[KEncoder[m[K
+       [01;36m[K^~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:20:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kenc[m[K’ was not declared in this scope
+             [01;31m[Kenc[m[K[i]=new Encoder(type,0);
+             [01;31m[K^~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:20:24:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[KEncoder[m[K’
+             enc[i]=new [01;31m[KEncoder[m[K(type,0);
+                        [01;31m[K^~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:23:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kenc[m[K’ was not declared in this scope
+             [01;31m[Kenc[m[K[i]=new Encoder(type,max_length);
+             [01;31m[K^~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:23:24:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[KEncoder[m[K’
+             enc[i]=new [01;31m[KEncoder[m[K(type,max_length);
+                        [01;31m[K^~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:29:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kenc[m[K’ was not declared in this scope
+          message.data=[01;31m[Kenc[m[K[enc_number]->to_string();
+                       [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Publisher.dir/all] Error 2
+make[1]: *** Attesa per i processi non terminati....
+make[2]: *** [CMakeFiles/Encoder.dir/Publisher/Publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Encoder.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,4 @@
+make[2]: ***  Nessuna regola per generare l'obiettivo "/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp", necessario per "CMakeFiles/Encoder.dir/Publisher/Encoder.cpp.o".  Arresto.
+make[1]: *** [CMakeFiles/Encoder.dir/all] Error 2
+make[1]: *** Attesa per i processi non terminati....
+make: *** [all] Error 2

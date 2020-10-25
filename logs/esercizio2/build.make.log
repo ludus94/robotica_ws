@@ -1,0 +1,5 @@
+[35m[1mScanning dependencies of target Publisher[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o[0m
+[ 75%] Built target Subscribe
+[100%] [32m[1mLinking CXX executable /home/robotica/robotica_ws/devel/.private/esercizio2/lib/esercizio2/Publisher[0m
+[100%] Built target Publisher

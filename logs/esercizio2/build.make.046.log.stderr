@@ -1,0 +1,7 @@
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:[m[K In constructor ‘[01m[KEncoder::Encoder()[m[K’:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:14:19:[m[K [01;31m[Kerror: [m[Kunable to find string literal operator ‘[01m[Koperator""std[m[K’ with ‘[01m[Kconst char [11][m[K’, ‘[01m[Klong unsigned int[m[K’ arguments
+      encoder_name=[01;31m[K"Enconder :"std[m[K::to_string(encoder_id);
+                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Publisher.dir/all] Error 2
+make: *** [all] Error 2

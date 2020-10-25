@@ -1,0 +1,6 @@
+devel_space: /home/robotica/robotica_ws/devel
+install: false
+install_space: /home/robotica/robotica_ws/install
+profile: default
+source_space: /home/robotica/robotica_ws/src
+workspace: /home/robotica/robotica_ws

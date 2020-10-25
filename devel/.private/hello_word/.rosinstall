@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/robotica/robotica_ws/devel/.private/hello_word/setup.sh

@@ -1,0 +1,1 @@
+/home/robotica/robotica_ws/devel/.private/hello_word/share/hello_word/cmake/hello_wordConfig-version.cmake

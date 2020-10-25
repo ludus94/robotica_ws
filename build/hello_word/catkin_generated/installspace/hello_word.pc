@@ -1,0 +1,8 @@
+prefix=/home/robotica/robotica_ws/install
+
+Name: hello_word
+Description: Description of hello_word
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

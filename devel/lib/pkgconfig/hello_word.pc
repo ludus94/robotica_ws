@@ -1,0 +1,1 @@
+/home/robotica/robotica_ws/devel/.private/hello_word/lib/pkgconfig/hello_word.pc

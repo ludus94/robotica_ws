@@ -1,0 +1,15 @@
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: nella funzione "_start":
+(.text+0x20): riferimento non definito a "main"
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/robotica/robotica_ws/devel/.private/esercizio2/lib/esercizio2/Encoder] Error 1
+make[1]: *** [CMakeFiles/Encoder.dir/all] Error 2
+make[1]: *** Attesa per i processi non terminati....
+CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o: nella funzione "main":
+Publisher.cpp:(.text+0x45): riferimento non definito a "std::Encoder::Encoder()"
+Publisher.cpp:(.text+0x24f): riferimento non definito a "std::Encoder::set_type_joint(bool, int)"
+Publisher.cpp:(.text+0x2b7): riferimento non definito a "std::Encoder::set_type_joint(bool, int)"
+Publisher.cpp:(.text+0x33e): riferimento non definito a "std::Encoder::to_string[abi:cxx11]()"
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/robotica/robotica_ws/devel/.private/esercizio2/lib/esercizio2/Publisher] Error 1
+make[1]: *** [CMakeFiles/Publisher.dir/all] Error 2
+make: *** [all] Error 2

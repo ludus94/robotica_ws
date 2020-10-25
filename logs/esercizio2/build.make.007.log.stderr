@@ -1,0 +1,14 @@
+In file included from [01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:3:0[m[K:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:28:8:[m[K [01;31m[Kerror: [m[Kunterminated comment
+ #endif [01;31m[K/[m[K* MY_CLASS_H *
+        [01;31m[K^[m[K
+In file included from [01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:3:0[m[K:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:28:8:[m[K [01;31m[Kerror: [m[Kunterminated comment
+ #endif [01;31m[K/[m[K* MY_CLASS_H *
+        [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/Encoder.dir/Publisher/Publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Encoder.dir/all] Error 2
+make[1]: *** Attesa per i processi non terminati....
+make[2]: *** [CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Publisher.dir/all] Error 2
+make: *** [all] Error 2

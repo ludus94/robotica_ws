@@ -1,0 +1,5 @@
+Linked: (/home/robotica/robotica_ws/devel/.private/hello_word/share/hello_word/cmake/hello_wordConfig.cmake, /home/robotica/robotica_ws/devel/share/hello_word/cmake/hello_wordConfig.cmake)
+Linked: (/home/robotica/robotica_ws/devel/.private/hello_word/share/hello_word/cmake/hello_wordConfig-version.cmake, /home/robotica/robotica_ws/devel/share/hello_word/cmake/hello_wordConfig-version.cmake)
+Linked: (/home/robotica/robotica_ws/devel/.private/hello_word/lib/pkgconfig/hello_word.pc, /home/robotica/robotica_ws/devel/lib/pkgconfig/hello_word.pc)
+Linked: (/home/robotica/robotica_ws/devel/.private/hello_word/lib/hello_word/talker, /home/robotica/robotica_ws/devel/lib/hello_word/talker)
+Linked: (/home/robotica/robotica_ws/devel/.private/hello_word/lib/hello_word/listener, /home/robotica/robotica_ws/devel/lib/hello_word/listener)

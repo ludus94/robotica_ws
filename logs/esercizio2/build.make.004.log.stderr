@@ -1,0 +1,7 @@
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:8:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kenc[m[K’ was not declared in this scope
+     Encoder::Encoder *[01;31m[Kenc[m[K[6];
+                       [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Publisher.dir/all] Error 2
+make: *** [all] Error 2

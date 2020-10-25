@@ -1,0 +1,47 @@
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:6:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ does not name a type; did you mean ‘[01m[Kstruct[m[K’?
+     [01;31m[Kstring[m[K encoder_name;
+     [01;31m[K^~~~~~[m[K
+     [32m[Kstruct[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:24:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ has not been declared
+     void set_encoder_name([01;31m[Kstring[m[K encodername){
+                           [01;31m[K^~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:30:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ does not name a type; did you mean ‘[01m[Kstruct[m[K’?
+     [01;31m[Kstring[m[K get_encoder_name(void){
+     [01;31m[K^~~~~~[m[K
+     [32m[Kstruct[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:42:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ does not name a type; did you mean ‘[01m[Kstruct[m[K’?
+     [01;31m[Kstring[m[K to_string(void){
+     [01;31m[K^~~~~~[m[K
+     [32m[Kstruct[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:[m[K In constructor ‘[01m[KEncoder::Encoder()[m[K’:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:12:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kencoder_name[m[K’ was not declared in this scope
+     [01;31m[Kencoder_name[m[K="Enconder :"+encoder_id;
+     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:12:5:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kset_encoder_name[m[K’
+     [01;36m[Kencoder_name[m[K="Enconder :"+encoder_id;
+     [01;36m[K^~~~~~~~~~~~[m[K
+     [32m[Kset_encoder_name[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:[m[K In member function ‘[01m[Kvoid Encoder::set_encoder_name(int)[m[K’:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:25:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kencoder_name[m[K’ was not declared in this scope
+  [01;31m[Kencoder_name[m[K=encodername;
+  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:25:2:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kencodername[m[K’
+  [01;36m[Kencoder_name[m[K=encodername;
+  [01;36m[K^~~~~~~~~~~~[m[K
+  [32m[Kencodername[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:[m[K In member function ‘[01m[Kint Encoder::get_encoder_misuration()[m[K’:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:35:21:[m[K [01;31m[Kerror: [m[K‘[01m[Krand[m[K’ was not declared in this scope
+            position=[01;31m[Krand[m[K()%360+1;
+                     [01;31m[K^~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.cpp:38:18:[m[K [01;31m[Kerror: [m[K‘[01m[Krand[m[K’ was not declared in this scope
+         position=[01;31m[Krand[m[K()%max_length+1;
+                  [01;31m[K^~~~[m[K
+make[2]: *** [CMakeFiles/Encoder.dir/Publisher/Encoder.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Encoder.dir/all] Error 2
+make[1]: *** Attesa per i processi non terminati....
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:6:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kint[m[K’
+ [01;31m[Kint[m[K main(int argc, char** argv) {
+ [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Publisher.dir/all] Error 2
+make: *** [all] Error 2

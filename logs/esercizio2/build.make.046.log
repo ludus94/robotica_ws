@@ -1,0 +1,13 @@
+[35m[1mScanning dependencies of target Publisher[0m
+[ 50%] Built target Subscribe
+[ 75%] [32mBuilding CXX object CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o[0m
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:[m[K In constructor ‘[01m[KEncoder::Encoder()[m[K’:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:14:19:[m[K [01;31m[Kerror: [m[Kunable to find string literal operator ‘[01m[Koperator""std[m[K’ with ‘[01m[Kconst char [11][m[K’, ‘[01m[Klong unsigned int[m[K’ arguments
+      encoder_name=[01;31m[K"Enconder :"std[m[K::to_string(encoder_id);
+                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+CMakeFiles/Publisher.dir/build.make:62: recipe for target 'CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o' failed
+make[2]: *** [CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o] Error 1
+CMakeFiles/Makefile2:584: recipe for target 'CMakeFiles/Publisher.dir/all' failed
+make[1]: *** [CMakeFiles/Publisher.dir/all] Error 2
+Makefile:140: recipe for target 'all' failed
+make: *** [all] Error 2

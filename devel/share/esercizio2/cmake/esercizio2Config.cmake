@@ -1,0 +1,1 @@
+/home/robotica/robotica_ws/devel/.private/esercizio2/share/esercizio2/cmake/esercizio2Config.cmake

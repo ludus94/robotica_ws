@@ -1,0 +1,41 @@
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:8:18:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KEncoder::Encoder()[m[K’
+     Encoder enc[6[01;31m[K][m[K;
+                  [01;31m[K^[m[K
+In file included from [01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:3:0[m[K:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:16:5:[m[K [01;36m[Knote: [m[Kcandidate: Encoder::Encoder(bool, int)
+     [01;36m[KEncoder[m[K(bool type_joint,int max_length);
+     [01;36m[K^~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:16:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: Encoder::Encoder(const Encoder&)
+ class [01;36m[KEncoder[m[K
+       [01;36m[K^~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: Encoder::Encoder(Encoder&&)
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:20:38:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KEncoder[m[K’ and ‘[01m[KEncoder*[m[K’)
+             enc[i]=new Encoder(type,0[01;31m[K)[m[K;
+                                      [01;31m[K^[m[K
+In file included from [01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:3:0[m[K:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: Encoder& Encoder::operator=(const Encoder&)
+ class [01;36m[KEncoder[m[K
+       [01;36m[K^~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEncoder*[m[K’ to ‘[01m[Kconst Encoder&[m[K’
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: Encoder& Encoder::operator=(Encoder&&)
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEncoder*[m[K’ to ‘[01m[KEncoder&&[m[K’
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:23:47:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KEncoder[m[K’ and ‘[01m[KEncoder*[m[K’)
+             enc[i]=new Encoder(type,max_length[01;31m[K)[m[K;
+                                               [01;31m[K^[m[K
+In file included from [01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:3:0[m[K:
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: Encoder& Encoder::operator=(const Encoder&)
+ class [01;36m[KEncoder[m[K
+       [01;36m[K^~~~~~~[m[K
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEncoder*[m[K’ to ‘[01m[Kconst Encoder&[m[K’
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[Kcandidate: Encoder& Encoder::operator=(Encoder&&)
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Encoder.h:7:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[KEncoder*[m[K’ to ‘[01m[KEncoder&&[m[K’
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:29:38:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[KEncoder[m[K’
+          message.data=enc[enc_number][01;31m[K->[m[Kto_string();
+                                      [01;31m[K^~[m[K
+make[2]: *** [CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Publisher.dir/all] Error 2
+make: *** [all] Error 2

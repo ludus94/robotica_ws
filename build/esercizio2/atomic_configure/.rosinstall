@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/robotica/robotica_ws/devel/.private/esercizio2/setup.sh

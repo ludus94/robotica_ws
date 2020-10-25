@@ -1,0 +1,12 @@
+/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o: nella funzione "_start":
+(.text+0x20): riferimento non definito a "main"
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/robotica/robotica_ws/devel/.private/esercizio2/lib/esercizio2/Encoder] Error 1
+make[1]: *** [CMakeFiles/Encoder.dir/all] Error 2
+make[1]: *** Attesa per i processi non terminati....
+[01m[K/home/robotica/robotica_ws/src/esercizio2/Publisher/Publisher.cpp:6:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kint[m[K’
+ [01;31m[Kint[m[K main(int argc, char** argv) {
+ [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/Publisher.dir/Publisher/Publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Publisher.dir/all] Error 2
+make: *** [all] Error 2
