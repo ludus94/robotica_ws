@@ -1,0 +1,6 @@
+Per lancare il paccketto 
+esegui un catkin build nel workspace
+mi metto nella cartella esercizio3_pkg/robot
+ed eseguo il comando:
+roslaunch urdf_tutorial display.launch model:=fanuc.xacro
+

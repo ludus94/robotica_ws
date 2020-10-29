@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+    This URDF uses the Denavit-Hartenberg (DH) conventions to place the reference frames of the joints.
+    It uses offsets to correctly place the visual and collision meshes. The Fanuc meshes are
+    generated such that their reference frames' origins are always placed in a center of rotation.
+    This allows to offset the visual and collision meshes by using only the displacements in the
+    mechanical drawing, without the need for manual (and error-prone) adjustements.
+-->
+
+<robot  name="fanuc"  xmlns:xacro="http://www.ros.org/wiki/xacro">         
+    
+    <!-- ******************** Used for fixing robot to Gazebo 'base_link' ********************-->
+    <link name="world"/>
+
+    <joint name="virtual_joint" type="fixed">
+        <parent link="world"/>
+        <child link="base_link"/>
+    </joint>
+    
+    
+    <!--************************************************BASE_LINK********************************************-->
+    <link name="base_link">
+        <!--link properties-->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/visual/link_0.dae" />
+            </geometry>
+            <material name=""/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/collision/link_0.stl" />
+            </geometry>
+        </collision>
+
+    </link>
+
+
+    <!--************************************************LINK 1********************************************-->
+    <link name="link1">
+        <!--Link properties-->
+        <visual>
+            <origin xyz="0 0 -0.45" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/visual/link_1.dae" />
+            </geometry>
+            <material name=""/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 -0.45" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/collision/link_1.stl" />
+            </geometry>
+        </collision>
+
+    </link>
+    <joint name="joint1" type="revolute">
+        <!--Joint properties-->
+        <origin xyz="0 0 0.45" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="link1" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.14" upper="3.14" effort="12" velocity="4.54" />
+        <dynamics damping="10.0" friction="50.0" />
+    </joint>
+
+
+     <!--************************************************LINK 2********************************************-->
+    <link name="link2">
+        <!--Link properties-->
+        <visual>
+            <origin xyz="-0.51 -0.15 0.15" rpy="1.57 0 1.57" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/visual/link_2.dae" />
+            </geometry>
+            <material name=""/>
+        </visual>
+
+        <collision>
+            <origin xyz="-0.51 -0.15 0.15" rpy="1.57 0 1.57" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/collision/link_2.stl" />
+            </geometry>
+        </collision>
+
+    </link>
+
+    <joint name="joint2" type="revolute">
+        <!--Joint properties-->
+        <origin xyz="0.15 -0.15 0.08" rpy="-1.57 -1.57 0" />
+        <parent link="link1" />
+        <child link="link2" />
+        <axis xyz="0 0 1" />
+        <limit lower="-2.18" upper="2.18" effort="12" velocity="4.89" />
+        <dynamics damping="10.0" friction="50.0" />
+    </joint>
+
+
+    <!--************************************************LINK 3********************************************-->    
+<link name="link3">
+        <!--Link properties-->
+        <visual>
+            <origin xyz="-0.15 1.31 0.15" rpy="-1.57 -3.14 -3.14" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/visual/link_3.dae" />
+            </geometry>
+             <material name=""/>
+        </visual>
+
+        <collision>
+            <origin xyz="-0.15 1.31 0.15" rpy="-1.57 -3.14 -3.14" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/collision/link_3.stl" />
+            </geometry>
+        </collision>
+
+    </link>
+
+    <joint name="joint3" type="revolute">
+        <!--Joint properties-->
+        <origin xyz="0.8 0 0" rpy="0 0 0" />
+        <parent link="link2" />
+        <child link="link3" />
+        <axis xyz="0 0 1" />
+        <limit lower="-2.67" upper="2.67" effort="12" velocity="5.50" />
+        <dynamics damping="10.0" friction="50.0" />
+    </joint>
+<!--************************************************LINK 4********************************************-->
+    <link name="link4">
+        <!--Link properties-->
+        <visual>
+            <origin xyz="-1.46 1.0 0.1" rpy="-1.57 0 -1.57" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/visual/link_4.dae" />
+            </geometry>
+            <material name=""/>
+        </visual>
+
+        <collision>
+            <origin xyz="-1.46 1.0 0.1 " rpy="-1.57 0 -1.57" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/collision/link_4.stl" />
+            </geometry>
+        </collision>
+
+    </link> 
+
+    <joint name="joint4" type="revolute">
+        <!--Joint properties-->
+        <origin xyz="0.2 -0.15 0.15" rpy="1.57 0 1.57" />
+        <parent link="link3" />
+        <child link="link4" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.165" upper="3.165" effort="11.7" velocity="7.5" />
+        <dynamics damping="10.0" friction="50.0" />
+    </joint>
+
+
+<!--************************************************LINK 5********************************************-->
+    <link name="link5">
+        <!--Link properties-->
+        <visual>
+            <origin xyz="-1.46 0 0.93" rpy="1.57 1.57 1.57" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/visual/link_5.dae" />
+            </geometry>
+            <material name=""/>
+        </visual>
+
+        <collision>
+            <origin xyz="-1.46 0 0.93" rpy="1.57 1.57 1.57" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/collision/link_5.stl" />
+            </geometry>
+        </collision>
+
+    </link>
+
+    <joint name="joint5" type="revolute">
+        <!--Joint properties-->
+        <origin xyz="0 0.64 0.1" rpy="1.57 0 0" />
+        <parent link="link4" />
+        <child link="link5" />
+        <axis xyz="0 0 1" />
+        <limit lower="-3.32" upper="3.32" effort="11.7" velocity="7.50" />
+        <dynamics damping="10.0" friction="50.0" />
+    </joint>
+ <!--************************************************LINK 6********************************************-->
+    <link name="link6">
+        <!--Link properties-->
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/visual/link_6.dae" />
+            </geometry>
+            <material name=""/>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="package://esercizio3_pkg/meshes/collision/link_6.stl" />
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="joint6" type="revolute">
+        <!--Joint properties-->
+        <origin xyz="0 0 -0.15" rpy="0 0 0" />
+        <parent link="link5" />
+        <child link="link6" />
+        <axis xyz="0 0 1" />
+        <limit lower="-6.28" upper="6.28" effort="5.8" velocity="11.0" />
+        <dynamics damping="10.0" friction="50.0" />
+    </joint>
+
+<!--************************************************FLANGE********************************************-->
+    <link name="flange"/>
+    <joint name="flange" type="fixed">
+        <!--Joint properties-->
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <parent link="link6" />
+        <child link="flange" />
+    </joint>
+</robot>
