@@ -165,7 +165,7 @@
     <link name="link5">
         <!--Link properties-->
         <visual>
-            <origin xyz="-1.46 0 0.93" rpy="1.57 1.57 1.57" />
+            <origin xyz="1.46 0.001 -1.07" rpy="0 -1.57 0" />
             <geometry>
                 <mesh filename="package://esercizio3_pkg/meshes/visual/link_5.dae" />
             </geometry>
@@ -173,7 +173,7 @@
         </visual>
 
         <collision>
-            <origin xyz="-1.46 0 0.93" rpy="1.57 1.57 1.57" />
+            <origin xyz="1.46 0.001 -1.07" rpy="0 -1.57 0" />
             <geometry>
                 <mesh filename="package://esercizio3_pkg/meshes/collision/link_5.stl" />
             </geometry>
@@ -183,7 +183,7 @@
 
     <joint name="joint5" type="revolute">
         <!--Joint properties-->
-        <origin xyz="0 0.64 0.1" rpy="1.57 0 0" />
+        <origin xyz="0 0.64 0.1" rpy="1.57 1.57 0" />
         <parent link="link4" />
         <child link="link5" />
         <axis xyz="0 0 1" />
@@ -191,10 +191,10 @@
         <dynamics damping="10.0" friction="50.0" />
     </joint>
  <!--************************************************LINK 6********************************************-->
-    <link name="link6">
+    <link name="flange">
         <!--Link properties-->
         <visual>
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <origin xyz=" 0 0 -0.01" rpy="0 0 0" />
             <geometry>
                 <mesh filename="package://esercizio3_pkg/meshes/visual/link_6.dae" />
             </geometry>
@@ -202,29 +202,29 @@
         </visual>
 
         <collision>
-            <origin xyz="0 0 0" rpy="0 0 0" />
+            <origin xyz="0 0 -0.01" rpy="0 0 0" />
             <geometry>
                 <mesh filename="package://esercizio3_pkg/meshes/collision/link_6.stl" />
             </geometry>
         </collision>
     </link>
 
-    <joint name="joint6" type="revolute">
+    <joint name="joint6" type="fixed">
         <!--Joint properties-->
-        <origin xyz="0 0 -0.15" rpy="0 0 0" />
+        <origin xyz="0 0 -0.099" rpy="0 0 0" />
         <parent link="link5" />
-        <child link="link6" />
+        <child link="flange" />
         <axis xyz="0 0 1" />
         <limit lower="-6.28" upper="6.28" effort="5.8" velocity="11.0" />
         <dynamics damping="10.0" friction="50.0" />
     </joint>
 
 <!--************************************************FLANGE********************************************-->
-    <link name="flange"/>
+  <!--  <link name="flange"/>
     <joint name="flange" type="fixed">
-        <!--Joint properties-->
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        Joint properties-->
+        <!--<origin xyz="0 0 -0.09" rpy="0 0 0" />
         <parent link="link6" />
         <child link="flange" />
-    </joint>
+    </joint>-->
 </robot>

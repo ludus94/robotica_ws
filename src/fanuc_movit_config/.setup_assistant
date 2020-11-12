@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: esercizio3_pkg
+    relative_path: robot/fanuc.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/fanuc.srdf
+  CONFIG:
+    author_name: Ludovico Russo
+    author_email: l.russo62@studenti.unisa.it
+    generated_timestamp: 1605198741
