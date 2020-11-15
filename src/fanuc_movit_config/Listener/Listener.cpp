@@ -21,7 +21,7 @@ int main(int argc,char** argv){
         std_msgs::String outstring;
         std::stringstream ss;
         transformStamped=tfBuffer.lookupTransform(joint_name[i],joint_name[i-1],ros::Time(0));
-        ss<<"************ Transformation from "<<joint_name[i-1]<<" to "<<joint_name[i]<<" ************"<<endl;
+        ss<<"\n************ Transformation from "<<joint_name[i-1]<<" to "<<joint_name[i]<<" ************"<<endl;
         float translationx=transformStamped.transform.translation.x;
         float translationy=transformStamped.transform.translation.y;
         float translationz=transformStamped.transform.translation.z;
@@ -29,25 +29,26 @@ int main(int argc,char** argv){
         ss<<"x:"<<translationx<<"\n"<<endl;
         ss<<"y:"<<translationy<<"\n"<<endl;
         ss<<"z:"<<translationz<<"\n"<<endl;
-        tf2::Quaternion quat;
-        quat.setX(transformStamped.transform.rotation.x);
-        quat.setY(transformStamped.transform.rotation.y);
-        quat.setZ(transformStamped.transform.rotation.z);
-        quat.setW(transformStamped.transform.rotation.w);  
         float x=transformStamped.transform.rotation.x;
         float y=transformStamped.transform.rotation.y;
         float z=transformStamped.transform.rotation.z;
-        float w=transformStamped.transform.rotation.w;  
+        float w=transformStamped.transform.rotation.w;
+        //Print Quaternion at matlab
+        ss<<"-----Quaternion----"<<endl;
+        ss<<"x:"<<x<<endl;  
+        ss<<"y:"<<y<<endl;
+        ss<<"z:"<<z<<endl;
+        ss<<"w:"<<w<<endl;
         //Define elements of rotation matrix
-        float r11=2*(pow(w,2)+pow(x,2))-1;
+        float r11=(2*(pow(w,2)+pow(x,2)))-1;
         float r12=2*(x*y-w*z);
         float r13=2*(x*z+w*y);
         float r21=2*(x*y+w*z);
-        float r22=2*(pow(w,2)+pow(y,2))-1;
-        float r23=2*(y*z+w*x);
+        float r22=(2*(pow(w,2)+pow(y,2)))-1;
+        float r23=2*(y*z-w*x);
         float r31=2*(x*z-w*y);
         float r32=2*(y*z+w*x);
-        float r33=2*(pow(w,2)+pow(z,2))-1;
+        float r33=(2*(pow(w,2)+pow(z,2)))-1;
         float theta=acos((r11+r22+r33-1)/2);
         float raa1=(1/(2*sin(theta)))*(r32-r23);
         float raa2=(1/(2*sin(theta)))*(r13-r31);
@@ -70,15 +71,15 @@ int main(int argc,char** argv){
         float roll=0;
         float pitch=0;
         float yaw=0;
-        if(theta>-1.57 && theta<1.57){
+        //if(theta>-1.57 && theta<1.57){
           roll=atan2(r21,r11);
           pitch=atan2(-r31,sqrt(pow(r32,2)+pow(r33,2)));
           yaw=atan2(r32,r33);
-        }else if (theta>1.57 && theta<4.71){
-          roll=atan2(-r21,-r11);
-          pitch=atan2(-r31,-sqrt(pow(r32,2)+pow(r33,2)));
-          yaw=atan2(-r32,-r33);
-        }
+        //}else if (theta>1.57 && theta<4.71){
+          //roll=atan2(-r21,-r11);
+          //pitch=atan2(-r31,-sqrt(pow(r32,2)+pow(r33,2)));
+          //yaw=atan2(-r32,-r33);
+        //}
         ss<<"["<<roll<<" "<<pitch<<" "<<yaw<<"]"<<endl;
         outstring.data=ss.str();
         ROS_INFO("%s",outstring.data.c_str());
